@@ -1,0 +1,125 @@
+.upper-section{
+    padding-top:10px;
+    padding-bottom: 25px;    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 200;
+
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+.left{
+    display: flex;
+    flex:1;
+    padding-left: 20px;
+}
+.hamburger{
+    width: 30px;
+    height: 7px;
+    height: auto;
+}
+.youtube{
+   display: flex;
+   width: 125px;
+   height: auto;
+}
+.middle{
+    flex: 1;
+    margin-left: 70px;
+    margin-right: 275px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+}
+.search-bar{
+    flex: 1;
+    height: 36px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+    width: 0;
+} 
+.search-bar::placeholder{
+    font-family:Arial;
+    font-size: 18px;
+    color: gray;
+    padding-left: 7px;
+}
+.voice{
+    padding-left: 18px;
+    width: 28px;
+    height: 25px;
+    background-color: rgb(235, 224, 224);
+    padding-left:0;
+    margin-left:15px;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.voice:hover{
+    opacity: 0.8;
+}
+.right{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+}
+.create{
+    width: 60px;
+    padding-right: 30px;
+}
+.notification{
+    width:30px;
+    padding: 5px;
+}
+.notification:hover{
+    background-color: rgb(238, 242, 246);
+    border-radius: 10px;
+}
+.ankit{
+    width: 30px;
+    margin-left:30px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.hover-container {
+    position: relative;
+    display: inline-block; /* Ensure proper positioning */
+  }
+  
+  .search-image {
+    display: block; /* Ensures the image is treated as a block element */
+    width: 40px; /* Adjust width as needed */
+    height: auto;
+  }
+  
+  .hover-text {
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Transparent by default */
+    transition: opacity 0.3s; /* Smooth fade-in effect */
+  }
+  
+  .hover-container:hover .hover-text {
+    visibility: visible; /* Show text on hover */
+    opacity: 1; /* Make text fully visible */
+  }
+  

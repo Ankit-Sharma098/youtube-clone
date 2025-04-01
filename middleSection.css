@@ -1,0 +1,61 @@
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 5px;
+}
+.thumbnail {
+    max-width: 100%; /* Responsive width */
+    border-radius: 15px;
+    transition: border-radius 0.2s;
+}
+.thumbnail:hover {
+    border-radius: 0px;
+}
+.description {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    cursor: pointer;
+}
+.profile-pic-1 {
+    width: 38px;
+    border-radius: 27px;
+}
+.textual-part {
+    padding-left: 0; /* Fixed invalid property */
+}
+.content {
+    max-width: 100%; /* Responsive width */
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+.channel-name {
+    color: rgb(115, 112, 112);
+    margin-top: 0px;
+    margin-bottom: 4px;
+    transition: color 0.2s, opacity 0.2s; /* Smooth hover effect */
+}
+.channel-name:hover {
+    color: black;
+    opacity: 0.9;
+}
+.channel-view {
+    color: rgb(115, 112, 112);
+    margin-top: 0px;
+}
+@media (max-width: 750px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 751px) and (max-width: 999px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media (min-width: 1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+}

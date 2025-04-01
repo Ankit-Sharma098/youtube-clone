@@ -1,0 +1,39 @@
+.leftSection{
+    color:black;
+    position: fixed;
+    top: 95px;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    background-color:white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(228, 228, 228);
+}
+.sections{
+    background-color: rgb(246, 243, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom:10px;
+    align-items: center;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+.sections:hover{
+    background-color: rgb(203, 202, 200) ;
+}
+.left-icons{
+   width: 23px;
+}
+.left-paragraphs{
+    padding-right: 36px;
+}
